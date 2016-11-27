@@ -3,6 +3,7 @@ package kh146volovik.db;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Date;
+import java.util.Properties;
 
 import org.dbunit.DatabaseTestCase;
 import org.dbunit.database.DatabaseConnection;

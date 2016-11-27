@@ -27,6 +27,9 @@
 			</classpath>
 			<formatter type="plain"/>
 			<test name="kh146volovik.UserTest"></test>
+			<test name="kh146volovik.db.DaoFactoryTest"></test>
+			<test name="kh146volovik.db.HsqldbTest"></test>
+			<test name="kh146volovik.gui.MainFrameTest"></test>
 		</junit>
 	</target>
 </project>

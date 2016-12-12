@@ -2,6 +2,7 @@ package kh146volovik.db;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 import java.sql.Connection;
 
 public class ConnectionFactoryImpl implements ConnectionFactory {
@@ -21,6 +22,15 @@ public class ConnectionFactoryImpl implements ConnectionFactory {
 	public ConnectionFactoryImpl() {
 		// TODO Auto-generated constructor stub
 	}
+
+	
+		public ConnectionFactoryImpl(Properties properties) {
+			 user = properties.getProperty("connection.user");
+			 password = properties.getProperty("connection.password");
+			 url = properties.getProperty("connection.url");
+			 driver = properties.getProperty("connection.driver");
+		}
+	
 
 	@Override
 	public Connection createConnection() throws DatabaseException {
